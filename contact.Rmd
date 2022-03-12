@@ -1,0 +1,13 @@
+---
+title: "contact"
+author: "Saurav"
+date: "3/9/2022"
+output: html_document
+---
+
+<b><h3> For information, you can contact </h3></b>
+
+<li><b> Dr. Bijesh Maharjan : </b> bmaharjan@unl.edu </li>
+<li><b> Dr. Saurav Das : </b> sdas4@unl.edu </li>
+<li><b> Aaron Hird : </b> aaron.hird@usda.gov </li>
+
