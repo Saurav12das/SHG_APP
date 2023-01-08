@@ -17,7 +17,7 @@ library(rmarkdown)
 library(rvest)
 library(rgeos)
 library(sf)
-
+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
 
 #30 year normal precipitation shape file
 precip <- readOGR("NE_Precipitaion_Map")
