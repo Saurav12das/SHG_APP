@@ -39,11 +39,11 @@ df_CRP <- df %>% filter(Land_Suitability == "Cropland")
 pal <- colorFactor(palette = c("purple", "green"),
                    levels = c("Reference", "Cropland"))
 
-#creating continuous color numeric for the precipitation map
-nc_pal <- colorNumeric(palette = c("#FF9191", "purple", "green"), domain = precip_in)
-
 #precipitation vector for the map
 precip_in <- precip@data$Inches
+
+#creating continuous color numeric for the precipitation map
+nc_pal <- colorNumeric(palette = c("#FF9191", "purple", "green"), domain = precip_in)
 
 
 ui <- function(){
