@@ -17,7 +17,7 @@ library(rmarkdown)
 library(rvest)
 library(rgeos)
 library(sf)
-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
+
 
 #30 year normal precipitation shape file
 precip <- readOGR("NE_Precipitaion_Map")
@@ -142,9 +142,11 @@ server <- function(input, output) {
       ) %>%
       addCircleMarkers(
         group = "Reference",
+        lng = -96.8063888549805,
+        lat = 40.8688888549805,
         radius = 10,
-        color = "purple",-96.8063888549805,
-        40.8688888549805,
+        fillColor = "purple",
+        color = "black",
         popup = paste0(
           "<b>Name = </b>",
           "<b><a href = 'https://grassland.unl.edu/nine-mile-prairie'> Nine-Mile Prairie</a></b>",
