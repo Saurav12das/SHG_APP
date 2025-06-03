@@ -26,3 +26,13 @@ shiny::runApp("app.R")
 ```
 
 The app loads the precipitation map and the soil organic matter layer and displays them on an interactive Leaflet map.
+
+## Deployment
+A GitHub Actions workflow deploys the app using `rsconnect`. The workflow
+expects the following repository secrets:
+
+- `SHINY_ACC` – your RStudio Connect account name
+- `SHINY_TOKEN` – the deployment token
+- `SHINY_SECRET` – the deployment secret
+
+Set these secrets in your repository settings for automatic deployment.
